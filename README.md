@@ -2,8 +2,8 @@
 Aztec Network Testnet'te `Sequencer Node`'un nasıl çalıştırılacağına ve `Apprentice` Rolünün nasıl kazanılacağına dair adım adım bir kılavuz.
 
 * **Testnet'e hangi düğüm türleri katılabilir?**
-  * `Sequencer`: blokları önerir, diğerlerinden gelen blokları doğrular ve yükseltmeler için oylama yapar.
- * `Prover`: toplama bütünlüğünü doğrulayan ZK kanıtları üretir.
+* `Sequencer`: blokları önerir, diğerlerinden gelen blokları doğrular ve yükseltmeler için oylama yapar.
+*  `Prover`: toplama bütünlüğünü doğrulayan ZK kanıtları üretir.
 
 ## Rol Bilgileri
 Sequecner Düğümleri, Discord'daki katkıları için belirli bir rol alacaklar.
@@ -34,9 +34,8 @@ Sequencer düğümünüzü çalıştırıp senkronize ettikten sonra [Rol Al](ht
 
 ---
 
-
 **VPS Kullanıcıları**: 4 çekirdekli CPU ve 8 GB RAM'e sahip bir `VPS` ile başlayabilir! Ancak uzun süreli çalıştırmayı düşünüyorsanız 1tb ssd li Kaliteli ve ucuz bir vps almanızı tavsiye ederim. [Buradan satın alın](https://www.netcup.com/en/server/vps)
-* ![VPS 4000 G11](https://github.com/user-attachments/assets/1088fd9c-9607-46e1-a489-8b9012b3242f)
+![VPS 4000 G11](https://github.com/user-attachments/assets/1088fd9c-9607-46e1-a489-8b9012b3242f)
 * Aşağıda sizlere indirimden faydalanabileceğiniz ve ilk ay ücretsiz kullanabileceğiniz 25 tane farklı kod bırakıyorum.
 * Unutmayın her bir kod sadece bir kere kullanılabilir. Tavsiye ettiğim sistem (VPS 4000 G11) sistemidir
 *KODLAR: 4103nc174776235424 --- 4103nc174776235423 --- 4103nc174776235422 --- 4103nc174776235421 --- 4103nc174776235420 --- 4103nc174776235419 --- 4103nc174776235418 --- 4103nc174776235417 --- 4103nc174776235416 --- 4103nc174776235415 --- 4103nc174776235414 --- 4103nc174776235413 --- 4103nc174776235412 --- 4103nc174776235411 --- 4103nc174776235410 --- 4103nc17477623549 --- 4103nc17477623548 --- 4103nc17477623547 --- 4103nc17477623546 --- 4103nc17477623545 --- 4103nc17477623544 --- 4103nc17477623543 --- 4103nc17477623542 --- 4103nc17477623541 --- 4103nc17477623540
