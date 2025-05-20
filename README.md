@@ -36,6 +36,7 @@ Sequencer düğümünüzü çalıştırıp senkronize ettikten sonra [Rol Al](ht
 
 
 **VPS Kullanıcıları**: 4 çekirdekli CPU ve 8 GB RAM'e sahip bir `VPS` ile başlayabilir! Ancak uzun süreli çalıştırmayı düşünüyorsanız 1tb ssd li Kaliteli ve ucuz bir vps almanızı tavsiye ederim. [Buradan satın alın](https://www.netcup.com/en/server/vps)
+* ![VPS 4000 G11](https://github.com/user-attachments/assets/1088fd9c-9607-46e1-a489-8b9012b3242f)
 * Aşağıda sizlere indirimden faydalanabileceğiniz ve ilk ay ücretsiz kullanabileceğiniz 25 tane farklı kod bırakıyorum.
 * Unutmayın her bir kod sadece bir kere kullanılabilir. Tavsiye ettiğim sistem (VPS 4000 G11) sistemidir
 *KODLAR: 4103nc174776235424 --- 4103nc174776235423 --- 4103nc174776235422 --- 4103nc174776235421 --- 4103nc174776235420 --- 4103nc174776235419 --- 4103nc174776235418 --- 4103nc174776235417 --- 4103nc174776235416 --- 4103nc174776235415 --- 4103nc174776235414 --- 4103nc174776235413 --- 4103nc174776235412 --- 4103nc174776235411 --- 4103nc174776235410 --- 4103nc17477623549 --- 4103nc17477623548 --- 4103nc17477623547 --- 4103nc17477623546 --- 4103nc17477623545 --- 4103nc17477623544 --- 4103nc17477623543 --- 4103nc17477623542 --- 4103nc17477623541 --- 4103nc17477623540
@@ -113,13 +114,13 @@ aztec-up alpha-testnet
 **RPC çözümleri hakkında daha fazla bilgi**:
 
 ### Geth ve Prysm Düğümlerini Çalıştırarak Kendi RPC'nizi Edinin
-* Bu kılavuzu izleyerek kendi yerel RPC düğümlerinizi çalıştırabilirsiniz: [geth-prysm-node]([https://github.com/0xmoei/geth-prysm-node](https://github.com/ultramit1/geth-prysm-node)). 600-1000 GB SSD'ye ihtiyacınız olabilir
+* Bu kılavuzu izleyerek kendi yerel RPC düğümlerinizi çalıştırabilirsiniz: [geth-prysm-node](https://github.com/ultramit1/geth-prysm-node)). 600-1000 GB SSD'ye ihtiyacınız olabilir
 
 ### Ücretsiz RPC'ler:
 * `RPC URL`: Sepolia Ethereum HTTP API'sini oluşturun [Alchemy](https://dashboard.alchemy.com/)
 * `BEACON RPC`: Bir hesap oluşturun [drpc](https://drpc.org/) ve şurayı bulun `Sepolia Ethereum Beacon Chain ` Endpoints.
 
-![Örnek resim](https://camo.githubusercontent.com/a272b345a6e24b2628a504ff0c44ec5850a1ebe574e6f824023aad7802633ea7/68747470733a2f2f68697a6c69726573696d2e636f6d2f72693764736134)
+![Örnek Resim](https://github.com/user-attachments/assets/cea54713-bb28-4d7d-90cf-dca47c47e9ee)
 
 ### Paralı RPC:
 Yukardaki Chainstack linkine gidin: Orada aylık abonelik açabilirsiniz. Ayda 50$ ile bir ay sorunsuz çalıştırabilirsiniz. 20 milyon request hakkınız var yeterli olacağını düşünüyorum.
@@ -245,14 +246,7 @@ fi
 * Proof alma kodunu yazdıktan sonra size AAAAAAAile başlayan uzun tuhaf bir kod verir onun tümünü kaydedin discordda onu girip rol alacaksınız.
 
 
-
-
-
-
-
-
-
-
+---
 
 ## 🔃 Sequencer Node'u Güncelle
 * 1- Düğümü Durdur:
@@ -284,3 +278,22 @@ rm -rf ~/.aztec/alpha-testnet/data/
 
 ---
 
+## Apprentice Discord Rolünü Alın:
+Discord kanalına gidin: ![örnek resim](https://github.com/user-attachments/assets/98523f9f-1613-4ef5-a287-e43a7dfcef8e)
+
+---
+
+**SON ADIMLAR: Discord'a kaydolun**
+* Herşey senkronize olup node sorunsuz çalıştıktan sonra Bu Discord sunucusunda şu komutu yazın: `/operator start`
+* Komutu yazdıktan sonra, Discord şuna benzeyen seçenek alanlarını görüntüler:
+* `address`: Doğrulayıcı adresiniz (Ethereum Adresi)
+* `block-number`: Doğrulama için blok numarası (aldığınız blok numarası)
+* `proof`: Senkronizasyon kanıtınız (AAAAA ile başlayan uzun base64 dizesi)
+
+Ardından `Apprentice` Rolünüzü alacaksınız
+
+![Resim](https://github.com/user-attachments/assets/8cb44940-bf62-4a69-a051-c7d2bf5359fc)
+
+---
+
+## SON OLARAK GUARDİAN OLMAK İÇNİ ACELE ETMEYİN EN AZ 2 GÜN ÇALIŞTIRIN. Apprentice rolü aldıktan sonra #upgrade role kanalından guardian olmak için /IP sekmesinden Ip adresinizi aratarak rol yükseltebilirsiniz. Kolay gelsin.
