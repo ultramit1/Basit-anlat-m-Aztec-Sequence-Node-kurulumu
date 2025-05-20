@@ -1,0 +1,1 @@
+# Basit-anlat-m-Aztec-Sequence-Node-kurulumu
