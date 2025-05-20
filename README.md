@@ -112,27 +112,29 @@ aztec-up alpha-testnet
 
 ## 4. RPC URL'lerini edinin
 * Sepolia `RPC URL` ve Sepolia `BEACON URL` API'lerini destekleyen bir 3. taraf bulun. (ücretsiz olanlar size apprentice rolü verir ama guardian için yeterli olmaz)
-* Kullanımınızın çoğu `RPC URL`dir. `RPC URL` ve `Beacon URL` için [Chainstack]([https://dashboard.alchemy.com/](https://chainstack.com)) adresine gidip ücretli rpc kullanmanızı kullanmanızı öneririm. Kendi RPC'nizi kurmak istiyorsanız farklı rehberlerden yararlanabilirsiniz.
+* Kullanımınızın çoğu `RPC URL`dir. `RPC URL` ve `Beacon URL` için [Chainstack](https://chainstack.com/) adresine gidip ücretli rpc kullanmanızı kullanmanızı öneririm. Kendi RPC'nizi kurmak istiyorsanız farklı rehberlerden yararlanabilirsiniz.
 
 **RPC çözümleri hakkında daha fazla bilgi**:
 
 ### Geth ve Prysm Düğümlerini Çalıştırarak Kendi RPC'nizi Edinin
-* Bu kılavuzu izleyerek kendi yerel RPC düğümlerinizi çalıştırabilirsiniz: [geth-prysm-node](https://github.com/ultramit1/geth-prysm-node)). 600-1000 GB SSD'ye ihtiyacınız olabilir
+* Bu kılavuzu izleyerek kendi yerel RPC düğümlerinizi çalıştırabilirsiniz: [geth-prysm-node](https://github.com/ultramit1/geth-prysm-node) 600-1000 GB SSD'ye ihtiyacınız olabilir
 
-### Ücretsiz RPC'ler:
+### Ücretsiz RPC'ler: 
 * `RPC URL`: Sepolia Ethereum HTTP API'sini oluşturun [Alchemy](https://dashboard.alchemy.com/)
 * `BEACON RPC`: Bir hesap oluşturun [drpc](https://drpc.org/) ve şurayı bulun `Sepolia Ethereum Beacon Chain ` Endpoints.
 
 ![Örnek Resim](https://github.com/user-attachments/assets/cea54713-bb28-4d7d-90cf-dca47c47e9ee)
 
-### Paralı RPC:
+### Paralı RPC: 
+[Chainstack](https://chainstack.com/)
+
 Yukardaki Chainstack linkine gidin: Orada aylık abonelik açabilirsiniz. Ayda 50$ ile bir ay sorunsuz çalıştırabilirsiniz. 20 milyon request hakkınız var yeterli olacağını düşünüyorum.
+![Image](https://github.com/user-attachments/assets/bf9964e9-24c1-4194-961b-b2d42a9320ba)
+
+---
 
 
-
-
-
-> Kendi `RPC URL` ve `BEACON RPC`'nizi elde etmek için kendi Geth ve Prysm düğümlerinizi çalıştırabilir veya diğer 3. parti çözümleri bulabilirsiniz.
+> Tekrardan hatırlatma Kendi `RPC URL` ve `BEACON RPC`'nizi elde etmek için kendi Geth ve Prysm düğümlerinizi çalıştırabilir veya diğer 3. parti çözümleri bulabilirsiniz. [geth-prysm-node](https://github.com/ultramit1/geth-prysm-node)
 
 ---
 
@@ -142,7 +144,7 @@ Yukardaki Chainstack linkine gidin: Orada aylık abonelik açabilirsiniz. Ayda 5
 ---
 
 ## 6. Cüzdanınıza Nasıl Sepolia ETH edinilir?
-[Buradan elde edebilirsiniz](https://www.alchemy.com/faucets/ethereum-sepolia) veya ![GPU ile kazım yaparak da alabilirsiniz. En az 10dk çalışması lazım] [Link](https://sepolia-faucet.pk910.de)
+[Alchemy faucet](https://www.alchemy.com/faucets/ethereum-sepolia) veya ![GPU ile kazım yaparak da alabilirsiniz. En az 10dk çalışması lazım] [POW faucet](https://sepolia-faucet.pk910.de)
 
 ---
 
@@ -169,7 +171,7 @@ ufw allow 8080
 ---
 
 ## 9. Sequencer Node'u Çalıştırın
-Sequencer Node'u şu iki yöntemden biriyle çalıştırabilirsiniz: `Docker` veya `CLI` Biz bu rehberde CLI olarak çalıştıracağız.
+Sequencer Node'u şu iki yöntemden biriyle çalıştırabilirsiniz: `Docker` veya `CLI` Biz bu rehberde CLI olarak çalıştıracağız. Docker kurup sorun yaşayanlara rastladığım için screen ile kurmayı tercih ettim.
 
 * Screen Kurun
 ```bash
@@ -180,7 +182,7 @@ screen -S aztec
 * Node'u başlatmak için aşağıdaki kodları bir not defterine kopyalayıp belirtilen yerleri kendi bilgilerinizle değiştirin:
 * Cüzdan gizli anahtarını başına 0x koyarak yazınız örnek cüzdanın 111 ile başlıyorsa başına 0x gelecek yani 0x111 olacak.
 * Cüzdan public adresinizin başına ekstra 0x koymanıza gerek yok. Ben 0x koymadan olduğu gibi yaptım oldu. Bazılarında problem çıkmış önce koymadan deneyin olmazsa koyarsınız.
-* Execution ve Beacon rpc'lerini kopyala ve oraya yapıştır. (\) BU İŞARET İLE KOYDUĞUN BİLGİLERİN ARASINDA TIPKI AŞAĞIDA OLDUĞU GİBİ BOŞLUK OLACAK. ONU ELLEMEYİN
+* Execution ve Beacon rpc'lerini kopyala ve oraya yapıştır.
 * En son IPburaya olan yeri silin ve oraya IP'nizi yaazın.
 
 Node'u çalıştırmadan önce aşağıdaki değişkenleri değiştirin:
@@ -203,7 +205,10 @@ aztec start --node --archiver --sequencer \
 
 ---
 
-* BU KODU GİRDİKTEN SONRA NODE ÇALIŞMAYA VE SENKRONİZE OLMAYA BAŞLAYACAKTIR. EKRANI CTRL+ A + D ile kapatabilirsiniz. Bu sizi sunucunuzun giriş sekmesine atacaktır. Şimdi logların biraz akmasını ve blockların senkronize olmasını yani son bloğa gelmesini bekliyeceğiz. Bu sırada aşağıdaki komutları girebilirsiniz:
+* BU KODU GİRDİKTEN SONRA NODE ÇALIŞMAYA VE SENKRONİZE OLMAYA BAŞLAYACAKTIR. EKRANI CTRL+ A + D ile kapatabilirsiniz.
+* Bu sizi sunucunuzun giriş sekmesine atacaktır. Şimdi logların biraz akmasını ve blockların senkronize olmasını yani son bloğa gelmesini bekliyeceğiz İşlem birazcık sürebilir. Bu sırada aşağıdaki komutları girebilirsiniz:
+
+---
 
 **Adım 1: En son kanıtlanmış blok numarasını alın:**
 ```bash
@@ -248,37 +253,6 @@ fi
 ```
 * Proof alma kodunu yazdıktan sonra size AAAAAAAile başlayan uzun tuhaf bir kod verir onun tümünü kaydedin discordda onu girip rol alacaksınız.
 
-
----
-
-## 🔃 Sequencer Node'u Güncelle
-* 1- Düğümü Durdur:
-```console
-# CLI
-docker stop $(docker ps -q --filter "ancestor=aztecprotocol/aztec") && docker rm $(docker ps -a -q --filter "ancestor=aztecprotocol/aztec")
-
-screen -ls | grep -i aztec | awk '{print $1}' | xargs -I {} screen -X -S {} quit
-```
-
-* 2- Node'u Güncelle:
-```bash
-aztec-up alpha-testnet
-```
-
-* 3- Eski verileri sil:
-```bash
-rm -rf ~/.aztec/alpha-testnet/data/
-```
-
-
-
-### İsteğe Bağlı Komutlar:
-**Ekran Komutları:**
-* Ekranı küçült Yani ekranı arka planda çalışır bir şekilde kapatmak: `Ctrl` + `A` + `D`
-* Ekrana geri dön: `screen -r aztec`
-* Ekranı sonlandır (içerideyken. Ama şimdi yapmayın sakın): `Ctrl`+`C+
-* Ekranı sonlandır (dışarıdayken): `screen -XS aztec quit`
-
 ---
 
 ## Apprentice Discord Rolünü Alın:
@@ -297,6 +271,48 @@ Ardından `Apprentice` Rolünüzü alacaksınız
 
 ![Resim](https://github.com/user-attachments/assets/8cb44940-bf62-4a69-a051-c7d2bf5359fc)
 
+## SON OLARAK GUARDİAN OLMAK İÇNİ ACELE ETMEYİN EN AZ 2 GÜN ÇALIŞTIRIN. Apprentice rolü aldıktan sonra #upgrade role kanalından guardian olmak için /IP sekmesinden Ip adresinizi aratarak rol yükseltebilirsiniz. Kolay gelsin.
+
 ---
 
-## SON OLARAK GUARDİAN OLMAK İÇNİ ACELE ETMEYİN EN AZ 2 GÜN ÇALIŞTIRIN. Apprentice rolü aldıktan sonra #upgrade role kanalından guardian olmak için /IP sekmesinden Ip adresinizi aratarak rol yükseltebilirsiniz. Kolay gelsin.
+## 🔃 Sequencer Node'u Güncelle ( Olurda AZTEC GÜNCELLEME DUYURURSA TEKRARDAN HERŞEYİ BAŞA ALMANA GEREK YOK)
+* 1- Düğümü Durdur:
+```console
+# CLI
+docker stop $(docker ps -q --filter "ancestor=aztecprotocol/aztec") && docker rm $(docker ps -a -q --filter "ancestor=aztecprotocol/aztec")
+
+screen -ls | grep -i aztec | awk '{print $1}' | xargs -I {} screen -X -S {} quit
+```
+
+* 2- Node'u Güncelle:
+```bash
+aztec-up alpha-testnet
+```
+
+* 3- Eski verileri sil:
+```bash
+rm -rf ~/.aztec/alpha-testnet/data/
+```
+
+* 4- Düğümü yeniden çalıştırın (AŞAĞIDAKİ BİLGİLERİ YİNE KENDİNİZE GÖRE AYARLAYIN VE BAŞLATIN)
+```
+aztec start --node --archiver --sequencer \
+  --network alpha-testnet \
+  --l1-rpc-urls RPC_URL  \
+  --l1-consensus-host-urls BEACON_URL \
+  --sequencer.validatorPrivateKey 0xÖzelanahtarın \
+  --sequencer.coinbase 0xCüzdanadresin \
+  --p2p.p2pIp IPBURAYA
+  --p2p.maxTxPoolSize 1000000000
+```
+
+---
+
+### İsteğe Bağlı Komutlar:
+**Ekran Komutları:**
+* Ekranı küçült Yani ekranı arka planda çalışır bir şekilde kapatmak: `Ctrl` + `A` + `D`
+* Ekrana geri dön: `screen -r aztec`
+* Ekranı sonlandır (içerideyken. Ama şimdi yapmayın sakın): `Ctrl`+`C+
+* Ekranı sonlandır (dışarıdayken): `screen -XS aztec quit`
+
+SAYGILAR SEVGİLER
