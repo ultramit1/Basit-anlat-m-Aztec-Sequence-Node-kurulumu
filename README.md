@@ -119,7 +119,7 @@ aztec-up alpha-testnet
 * `RPC URL`: Sepolia Ethereum HTTP API'sini oluşturun [Alchemy](https://dashboard.alchemy.com/)
 * `BEACON RPC`: Bir hesap oluşturun [drpc](https://drpc.org/) ve şurayı bulun `Sepolia Ethereum Beacon Chain ` Endpoints.
 
-![Örnek resim](https://hizliresim.com/ri7dsa4)
+![Örnek resim](https://camo.githubusercontent.com/a272b345a6e24b2628a504ff0c44ec5850a1ebe574e6f824023aad7802633ea7/68747470733a2f2f68697a6c69726573696d2e636f6d2f72693764736134)
 
 ### Paralı RPC:
 Yukardaki Chainstack linkine gidin: Orada aylık abonelik açabilirsiniz. Ayda 50$ ile bir ay sorunsuz çalıştırabilirsiniz. 20 milyon request hakkınız var yeterli olacağını düşünüyorum.
