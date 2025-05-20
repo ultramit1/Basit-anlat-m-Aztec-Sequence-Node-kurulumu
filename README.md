@@ -34,9 +34,11 @@ Sequencer düğümünüzü çalıştırıp senkronize ettikten sonra [Rol Al](ht
 
 ---
 
-**Windows Kullanıcıları**: Ubuntu'yu bu [kılavuzu](https://github.com/0xmoei/Install-Linux-on-Windows) kullanarak Windows'a yüklemeli, ardından diğer adımlara devam etmelidir.
 
-**VPS Kullanıcıları**: 4 çekirdekli CPU ve 8 GB RAM'e sahip bir `VPS` ile başlayabilir! [Buradan satın alın](https://my.hostbrr.com/order/forms/a/NTMxNw==)
+**VPS Kullanıcıları**: 4 çekirdekli CPU ve 8 GB RAM'e sahip bir `VPS` ile başlayabilir! Ancak uzun süreli çalıştırmayı düşünüyorsanız 1tb ssd li Kaliteli ve ucuz bir vps almanızı tavsiye ederim. [Buradan satın alın](https://www.netcup.com/en/server/vps)
+* Aşağıda sizlere indirimden faydalanabileceğiniz ve ilk ay ücretsiz kullanabileceğiniz 25 tane farklı kod bırakıyorum.
+* Unutmayın her bir kod sadece bir kere kullanılabilir. Tavsiye ettiğim sistem (VPS 4000 G11) sistemidir
+*KODLAR: 4103nc174776235424 --- 4103nc174776235423 --- 4103nc174776235422 --- 4103nc174776235421 --- 4103nc174776235420 --- 4103nc174776235419 --- 4103nc174776235418 --- 4103nc174776235417 --- 4103nc174776235416 --- 4103nc174776235415 --- 4103nc174776235414 --- 4103nc174776235413 --- 4103nc174776235412 --- 4103nc174776235411 --- 4103nc174776235410 --- 4103nc17477623549 --- 4103nc17477623548 --- 4103nc17477623547 --- 4103nc17477623546 --- 4103nc17477623545 --- 4103nc17477623544 --- 4103nc17477623543 --- 4103nc17477623542 --- 4103nc17477623541 --- 4103nc17477623540
 
 ---
 
