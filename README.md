@@ -12,10 +12,10 @@ Sequencer düğümünüzü çalıştırıp senkronize ettikten sonra [Rol Al](ht
 
 ---
 
-## Donanım Gereksinimleri
+## Donanım Gereksinimleri (Minimum)
 <table>
 <tr>
-<th colspan="3"> Sıralayıcı Düğüm Donanım Gereksinimleri </th>
+<th colspan="3"> Aztec Sequence Node için Donanım Gereksinimleri </th>
 </tr>
 <tr>
 <td>RAM</td>
@@ -30,7 +30,7 @@ Sequencer düğümünüzü çalıştırıp senkronize ettikten sonra [Rol Al](ht
 </table>
 
 * **Prover Düğümü**: 16 çekirdek ve 128 GB RAM'e sahip ~40x makine gerektirir
-* `Prover`'ı çalıştırmıyorum çünkü bu benim için değil, veri merkezi bilgi işlem sistemleri için.
+* `Prover`'ı çalıştırmıyorum çünkü bu benim için değil, veri merkezi bilgi işlem sistemleri için. Bu bilgiyi bende bilmiyordum. Neyse öğrenmiş olduk.
 
 ---
 
@@ -43,7 +43,9 @@ Sequencer düğümünüzü çalıştırıp senkronize ettikten sonra [Rol Al](ht
 
 ---
 
-## 1. Bağımlılıkları(güncellemeleri) Yükleyin
+## Sunucuyu satın aldıktan sonra Ip adresinizi ve Sunucu için aldığınız şifreyi kaydedin. SUNUCUNUZA GİRİŞ YAPIN
+
+## 1. Güncellemeleri Yükleyin
 * Update packages:
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
@@ -92,7 +94,8 @@ echo 'export PATH="$HOME/.aztec/bin:$PATH"' >> ~/.bashrc
 
 source ~/.bashrc
 ```
-* **Terminalinizi yeniden başlatın** Değişiklikleri nasıl uygulayacağınızı öğrenin.(direk terminali çarpı işaretinden de kapatabilirsiniz sorun olmaz arka planda dosyalar yüklü ve henüz screen kurmadık)
+* **Terminalinizi yeniden başlatın** sudo reboot yazın Ya da 
+* iki kere exit exit yazarak da veya (direk terminali çarpı işaretinden de kapatabilirsiniz sorun olmaz arka planda dosyalar yüklü ve henüz screen kurmadık)
 * Kurulumun başarılı olup olmadığını kontrol edin:
 ```bash
 aztec
@@ -139,7 +142,7 @@ Yukardaki Chainstack linkine gidin: Orada aylık abonelik açabilirsiniz. Ayda 5
 ---
 
 ## 6. Cüzdanınıza Nasıl Sepolia ETH edinilir?
-![Sepolia Faucet](https://faucets.pk910.de) veya ![Alcehmy'den alabilirsiniz](https://www.alchemy.com/faucets/ethereum-sepolia)
+[Buradan elde edebilirsiniz](https://www.alchemy.com/faucets/ethereum-sepolia) veya ![GPU ile kazım yaparak da alabilirsiniz. En az 10dk çalışması lazım] [Link](https://sepolia-faucet.pk910.de)
 
 ---
 
